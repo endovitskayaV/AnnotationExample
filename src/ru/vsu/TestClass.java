@@ -7,31 +7,18 @@ import java.util.logging.*;
 
 public class TestClass implements Serializable {
 
-    int num;
-
-    // @Elapsing(format="method time: %s ms")
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if ((obj == null) || (obj.getClass() != this.getClass()))
-            return false;
-        TestClass test = (TestClass) obj;
-        return num == test.num;
+    @Elapsing(format = "Elapsed  %s ms")
+    public void doSmth() {
+        doSame();
     }
 
-    // @Elapsing
-    public static void doSmth() {
+    @Elapsing(interval = Elapsing.TimeInterval.NANOSECOND, maxElapsed = 0)
+    private static void doSame() {
         try {
             Thread.sleep(500);
 
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
-
-    @Elapsing(format = "VVVV  %s")
-    public void doSmth1() {
-        doSmth();
     }
 }

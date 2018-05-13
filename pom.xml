@@ -9,25 +9,25 @@
     <version>1.0-SNAPSHOT</version>
 
 
-    <repositories>
-        <repository>
-            <id>elapsingAnnotation-mvn-repo</id>
-            <url>https://raw.github.com/endovitskayaV/elapsingAnnotation/mvn-repo/</url>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>elapsingAnnotation-mvn-repo</id>-->
+            <!--<url>https://raw.github.com/endovitskayaV/elapsingAnnotation/mvn-repo/</url>-->
+            <!--<snapshots>-->
+                <!--<enabled>true</enabled>-->
+                <!--<updatePolicy>always</updatePolicy>-->
+            <!--</snapshots>-->
+        <!--</repository>-->
+    <!--</repositories>-->
 
 
-    <dependencies>
-        <dependency>
-            <groupId>ru.vsu</groupId>
-            <artifactId>elapsingAnnotation</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <!--<dependencies>-->
+        <!--<dependency>-->
+            <!--<groupId>ru.vsu</groupId>-->
+            <!--<artifactId>elapsingAnnotation</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
+    <!--</dependencies>-->
 
     <build>
     <plugins>
