@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.vsu:elapsingAnnotation:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/vsu/elapsingAnnotation/1.0-SNAPSHOT/elapsingAnnotation-1.0-20180513.092813-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/vsu/elapsingAnnotation/1.0-SNAPSHOT/elapsingAnnotation-1.0-20180513.092813-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/vsu/elapsingAnnotation/1.0-SNAPSHOT/elapsingAnnotation-1.0-20180513.092813-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

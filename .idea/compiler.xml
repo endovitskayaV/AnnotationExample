@@ -15,10 +15,19 @@
       <profile default="true" name="Default" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processor name="ru.vsu.elapsingAnnotation.ElapsingAnnotationProcessor" />
-        <processorPath useClasspath="false">
+        <processorPath>
           <entry name="$PROJECT_DIR$/../elapsingAnnotation/target/elapsingAnnotation-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         </processorPath>
       </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AnnotationExample" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="AnnotationExample" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

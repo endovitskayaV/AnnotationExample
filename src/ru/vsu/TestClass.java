@@ -1,12 +1,15 @@
+package ru.vsu;
+
 import ru.vsu.elapsingAnnotation.Elapsing;
 
 import java.io.Serializable;
+import java.util.logging.*;
 
 public class TestClass implements Serializable {
 
     int num;
 
-    @Elapsing(format="method time: %s ms")
+    // @Elapsing(format="method time: %s ms")
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -17,17 +20,18 @@ public class TestClass implements Serializable {
         return num == test.num;
     }
 
-    @Elapsing()
-    public static void doSmth(){
+    // @Elapsing
+    public static void doSmth() {
         try {
             Thread.sleep(500);
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        int a=0;
     }
 
-    public  void doSmth1(){
-       doSmth();
+    @Elapsing(format = "VVVV  %s")
+    public void doSmth1() {
+        doSmth();
     }
 }
