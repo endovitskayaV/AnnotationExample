@@ -1,18 +1,22 @@
-package ru.vsu;
+package bla;
+
+
 
 import ru.vsu.elapsingAnnotation.Elapsing;
+import ru.vsu.elapsingAnnotation.ElapsingConfig;
 
 import java.io.Serializable;
-import java.util.logging.*;
 
-public class TestClass implements Serializable {
-
-    @Elapsing(format = "Elapsed  %s ms")
+//@Data
+public class TestClass implements  Serializable {
+    private static final String s = "jklj";
+    int a;
+    @Elapsing()
     public void doSmth() {
         doSame();
     }
 
-    @Elapsing(interval = Elapsing.TimeInterval.NANOSECOND, maxElapsed = 0)
+   // @Elapsing(interval = Elapsing.TimeInterval.NANOSECOND, maxElapsed = 1)
     private static void doSame() {
         try {
             Thread.sleep(500);
