@@ -1,26 +1,18 @@
-package bla;
-
-
-
 import ru.vsu.elapsingAnnotation.Elapsing;
-import ru.vsu.elapsingAnnotation.ElapsingConfig;
 
-import java.io.Serializable;
-
-//@Data
-public class TestClass implements  Serializable {
+public class TestClass {
     private static final String s = "jklj";
     int a;
-    @Elapsing()
+
+    @Elapsing
     public void doSmth() {
         doSame();
     }
 
-   // @Elapsing(interval = Elapsing.TimeInterval.NANOSECOND, maxElapsed = 1)
+    @Elapsing(messageFormat = "custom message")
     private static void doSame() {
         try {
-            Thread.sleep(500);
-
+            Thread.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
