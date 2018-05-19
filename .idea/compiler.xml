@@ -14,8 +14,7 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true">
         <outputRelativeToContentRoot value="true" />
-        <processor name="ru.vsu.elapsingAnnotation.ElapsingAnnotationProcessor" />
-        <processorPath useClasspath="false">
+        <processorPath>
           <entry name="$PROJECT_DIR$/../elapsingAnnotation/target/elapsingAnnotation-1.0-SNAPSHOT-jar-with-dependencies.jar" />
         </processorPath>
       </profile>

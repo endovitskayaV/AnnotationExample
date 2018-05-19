@@ -6,6 +6,7 @@ public class Main {
         System.out.println("Hello World!");
         TestClass t = new TestClass();
         ElapsingConfig.getInstance().setMessageFormat("global format %s");
+        ElapsingConfig.getInstance().setMaxElapsed(1);
        // ElapsingConfig.getInstance().setMaxElapsed(-2);
         t.doSmth();
     }
